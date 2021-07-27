@@ -1,0 +1,8 @@
+@import 'abstracts/variables';
+@import 'base/reset';
+@import 'layout/header';
+@import 'layout/container';
+
+body {
+	background-color: $bg-color;
+}

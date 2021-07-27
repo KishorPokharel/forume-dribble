@@ -1,0 +1,154 @@
+.container {
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 2rem;
+	display: flex;
+
+	.section-left {
+		width: 16.667%;
+
+		h4 {
+			color: $text-gray;
+			font-size: 1rem;
+			margin-bottom: 1rem;
+			margin-left: 5px;
+			font-weight: 500;
+		}
+
+		.side-nav {
+			&-link {
+				font-size: .8rem;
+				display: flex;
+				align-items: center;
+				padding: .3rem;
+				margin-bottom: .8rem;
+				text-decoration: none;
+				color: $text-gray;
+
+				span {
+					margin-left: .5rem;
+				}
+				&--active {
+					border-left: 5px solid $blue;
+					background-color: $active;
+					color: $blue;
+					border-radius: 4px;
+
+					.icon-svg {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+
+	.section-mid {
+		width: 66.667%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+
+		.post {
+			display: flex;
+			padding: 1rem;
+			box-shadow: 0px 2px 6px rgba(0,0,0, 0.08);
+			border-radius: .3rem;
+			margin-bottom: 2rem;
+
+			&-left {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 0 1rem;
+
+				.icon-svg-vote {
+					cursor: pointer;
+				}
+
+				.icon-svg-up--active {
+					color: $blue;
+				}
+
+				.icon-svg-down--active {
+					color: $red;
+				}
+
+				.vote-value {
+					margin: .5rem 0;
+					font-size: 1.5rem;
+					color: $text-gray;
+				}
+			}
+
+			&-right {
+				padding: 0 1rem;
+				.post-actual {
+					font-family: 'Poppins', sans-serif;
+					&__title {
+						padding: 0;
+						font-size: 2rem;
+						font-weight: 400;
+						color: $text-black;
+						margin-bottom: 1rem;
+					}
+					&__body {
+						font-size: 1rem;
+						color: rgba(0,0,0, .6);
+						word-spacing: .4rem;
+						padding-bottom: 1rem;
+						border-bottom: 2px solid $gray;
+						font-weight: 300;
+					}
+				}
+
+				.post-meta {
+					padding: 1rem 0;
+					display: flex;
+					justify-content: space-between;
+					font-size: .9rem;
+
+					&-left {
+						display: flex;
+						align-items: center;
+
+						&__profile-image {
+							width: 1.5rem;
+							height: 1.5rem;
+							border-radius: 50%;
+						}
+
+						&__who {
+							margin-left: 1rem;
+							color: $text-gray;
+
+							a {
+								text-decoration: none;
+								color: $blue;
+							}
+						}
+					}
+
+					&__time {
+						display: flex;
+						align-items: center;
+						color: $text-gray;
+					}
+
+					&__comments {
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						&-count {
+							color: $text-gray;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-right {
+		width: 16.667%;
+	}
+}
